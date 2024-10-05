@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nuestros Trabajos en Equipo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="pa.png" alt="Logo" class="logo-img"/>
+            <h1>PROGRAMACIÓN DE APLICACIÓNES MÓVILES</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre Mí</a></li>
+                <li><a href="#trabajos">Mis Proyectos</a></li>
+                <li><a href="#docente">Docente</a></li>
+                <li><a href="#diapositivas">Guía De Aprendizaje o Diapositivas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="inicio" class="hero">
+        <h2>Bienvenidos a Nuestro Portafolio</h2>
+        <p>Explora los proyectos que hemos realizado durante este periodo de clases.</p>
+        <a href="#trabajos" class="cta-button">Ver Trabajos</a>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="sobre-nosotros">
+        <h2>Sobre Mí</h2>
+        <div class="sobre-mi">
+            <img src="as.png" alt="Lázaro Villena Dóminick Andreé" />
+            <p>Soy Lázaro Villena Dóminick Andreé, estudiante del Instituto de Cajas, cursando el sexto semestre en Diseño y Programación Web. Apasionado por la programación y el desarrollo de aplicaciones móviles, estoy comprometido con el aprendizaje y la innovación en el campo tecnológico.</p>
+        </div>
+    </section>
+
+    <!-- Nuestros Trabajos -->
+    <section id="trabajos">
+        <h2>Trabajos; Deberes y Tareas ordenadas y Organizadas Por Semanas</h2>
+
+        <!-- Semana 1 -->
+        <div class="trabajo"> 
+            <h3>Semana 01</h3>
+            <p>En esta semana, trabajamos y elaboramos una infografía que destaca los principios esenciales de las aplicaciones móviles, incluyendo usabilidad, rendimiento, compatibilidad, seguridad e interacción.</p>
+            <img src="1.jfif" alt="Infografía del trabajo de la semana 01" />
+            <div class="ver-trabajo">
+                <a href="https://www.canva.com/design/DAGQym-LsSw/c_hnsROmRm0czRR4zCiUlg/edit?utm_content=DAGQym-LsSw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="boton">Ver La Infografía</a>
+            </div>
+        </div>
+
+        <!-- Semana 2 -->
+        <div class="trabajo">
+            <h3>Semana 02</h3>
+            <p>Elaboramos una guía de instalación para Dart, el lenguaje de programación optimizado para aplicaciones móviles y web. Incluye pasos detallados para instalar Dart en diferentes sistemas operativos.</p>
+            <img src="2.PNG" alt="Guía de la instalación del trabajo de la semana 02" />
+            <div class="ver-trabajo">
+                <a href="https://www.canva.com/design/DAGRPAZX-5U/LHT096DKs34JXu2PJJuEXw/edit" target="_blank" class="boton">Ver La Guía De Instalación</a>
+            </div>
+        </div>
+
+        <!-- Semana 3 -->
+        <div class="trabajo">
+            <h3>Semana 03</h3>
+            <p>Implementamos aplicaciones básicas utilizando Dart para la actividad de esta semana. A continuación, puedes ver y descargar los tres códigos generados.</p>
+            <img src="3.PNG" alt="Ejercicios en Visual Studio de Dart en la semana 03" />
+            
+            <!-- Código 1 -->
+
+            <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Códigos Dart</title>
+    <style>
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .boton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+
+        // Función para forzar la descarga de un archivo
+    
+        function forzarDescarga(rutaArchivo, nombreArchivo) {
+            const enlace = document.createElement("a");
+            enlace.href = rutaArchivo;
+            enlace.download = nombreArchivo;
+            document.body.appendChild(enlace);
+            enlace.click();
+            document.body.removeChild(enlace);
+        }
+    </script>
+</head>
+<body>
+
+<!-- Código 1 -->
+<div class="codigo">
+    <h4>Código 1 - Ejercicio básico de Dart</h4>
+    <pre>
+import 'dart:math';
+
+void main() {
+  double r = 5.0; 
+  double h = 10.0;
+
+  double area = 2 * pi * r * (r + h);
+  double volumen = pi * pow(r, 2) * h;
+
+  print('El área total del cilindro es: \$area');
+  print('El volumen del cilindro es: \$volumen');
+}
+    </pre>
+    <div class="ver-trabajo">
+        <a href="Código01.txt" target="_blank" class="boton">Explorar Código 1</a>
+        <a href="javascript:void(0)" onclick="forzarDescarga('Código01.txt', 'Código01.txt')" class="boton">Descargar Ejercicio 1</a>
+        <a href="Código01.txt" target="_blank" class="boton">Observar Código Fuente</a>
+    </div>
+</div>
+
+<!-- Código 2 -->
+<div class="codigo">
+    <h4>Código 2 - Operaciones con Dart</h4>
+    <pre>
+void main() {
+  double totalDinero = 1000.0;
+
+  double josue = 0.27 * totalDinero;
+  double daniel = 0.25 * totalDinero;
+  double tamar = 0.85 * josue;
+  double caleb = 0.23 * (josue + daniel);
+  double david = totalDinero - (josue + daniel + tamar + caleb);
+
+  print('Josué recibe: \$\${josue.toStringAsFixed(2)}');
+  print('Daniel recibe: \$\${daniel.toStringAsFixed(2)}');
+  print('Tamar recibe: \$\${tamar.toStringAsFixed(2)}');
+  print('Caleb recibe: \$\${caleb.toStringAsFixed(2)}');
+  print('David recibe: \$\${david.toStringAsFixed(2)}');
+}
+    </pre>
+    <div class="ver-trabajo">
+        <a href="Código02.txt" target="_blank" class="boton">Explorar Código 2</a>
+        <a href="javascript:void(0)" onclick="forzarDescarga('Código02.txt', 'Código02.txt')" class="boton">Descargar Ejercicio 2</a>
+        <a href="Código02.txt" target="_blank" class="boton">Observar Código Fuente</a>
+    </div>
+</div>
+
+<!-- Código 3 -->
+<div class="codigo">
+    <h4>Código 3 - Funciones en Dart</h4>
+    <pre>
+import 'dart:io'; 
+
+void main() {
+  print('Ingrese el monto total de inversión:');
+  double? totalDinero = double.parse(stdin.readLineSync()!); 
+
+  double alquiler = 0.23 * totalDinero;
+  double publicidad = 0.07 * totalDinero;
+  double transporte = 0.26 * totalDinero;
+  double servicios = 0.12 * totalDinero;
+  double decoracion = 0.21 * totalDinero;
+  double gastosVarios = 0.11 * totalDinero;
+
+  print('Gasto en alquiler de espacio: \$\${alquiler.toStringAsFixed(2)}');
+  print('Gasto en publicidad: \$\${publicidad.toStringAsFixed(2)}');
+  print('Gasto en transporte: \$\${transporte.toStringAsFixed(2)}');
+  print('Gasto en servicios feriales: \$\${servicios.toStringAsFixed(2)}');
+  print('Gasto en decoración: \$\${decoracion.toStringAsFixed(2)}');
+  print('Gasto en gastos varios: \$\${gastosVarios.toStringAsFixed(2)}');
+}
+    </pre>
+    <div class="ver-trabajo">
+        <a href="Código03.txt" target="_blank" class="boton">Explorar Código 3</a>
+        <a href="javascript:void(0)" onclick="forzarDescarga('Código03.txt', 'Código03.txt')" class="boton">Descargar Ejercicio 3</a>
+        <a href="Código03.txt" target="_blank" class="boton">Observar Código Fuente</a>
+    </div>
+</div>
+
+<div class="semana">
+    <h2>Semana 04</h2>
+    <p>Implementamos aplicaciones básicas utilizando Dart para la actividad de esta semana. A continuación, puedes ver y descargar los tres códigos generados.</p>
+    <img src="3.PNG" alt="Ejercicios en Visual Studio de Dart en la semana 04" />
+    
+    <!-- Código 1 - Ejercicio básico de Dart -->
+    <div class="codigo">
+        <h3>Código 1 - Ejercicio básico de Dart</h3>
+        <pre>
+
+            import 'dart:io';
+
+void main() {
+ // Tabla de pensiones por categoría
+ Map<String, double> pensiones = {
+  'A': 550,
+  'B': 500,
+  'C': 460,
+  'D': 400,
+ };
+
+ // Tabla de descuentos por nota promedio
+ List<Map<String, dynamic>> descuentos = [
+  {'rango': [0.0, 13.99], 'descuento': 0},
+  {'rango': [14.0, 15.99], 'descuento': 0.10},
+  {'rango': [16.0, 17.99], 'descuento': 0.12},
+  {'rango': [18.0, 20.0], 'descuento': 0.15},
+ ];
+
+ // Solicitar categoría del estudiante
+ print('Ingresa la categoría del estudiante (A, B, C, D):');
+ String? categoria = stdin.readLineSync()?.toUpperCase();
+
+ // Verificar si la categoría es válida
+ if (!pensiones.containsKey(categoria)) {
+  print('Categoría inválida.');
+  return;
+ }
+
+ // Solicitar nota promedio del estudiante
+ print('Ingresa la nota promedio del estudiante:');
+ double? promedio = double.tryParse(stdin.readLineSync()!);
+
+ // Verificar si la nota promedio es válida
+ if (promedio == null || promedio < 0 || promedio > 20) {
+  print('Nota promedio inválida.');
+  return;
+ }
+
+ // Obtener la pensión correspondiente a la categoría
+ double pensionActual = pensiones[categoria]!;
+
+ // Determinar el porcentaje de descuento según la nota promedio
+ double descuentoAplicado = 0;
+ for (var descuento in descuentos) {
+  if (promedio >= descuento['rango'][0] && promedio <= descuento['rango'][1]) {
+   descuentoAplicado = descuento['descuento'];
+   break;
+  }
+ }
+
+ // Calcular el monto de descuento y la nueva pensión
+ double montoDescuento = pensionActual * descuentoAplicado;
+ double nuevaPension = pensionActual - montoDescuento;
+
+ // Mostrar resultados
+ print('La pensión actual es: S/ $pensionActual');
+ print('El descuento aplicado es: ${descuentoAplicado * 100}%');
+ print('El monto del descuento es: S/ $montoDescuento');
+ print('La nueva pensión es: S/ $nuevaPension');
+}
+        </pre>
+        <div class="botones">
+            <a href="Enunciado01.txt" target="_blank" class="boton">Ver Enunciado N° 01</a>
+            <a href="javascript:void(0)" onclick="forzarDescarga('Enunciado01.txt', 'Enunciado01.txt')" class="boton">Descargar Enunciado N° 01</a>
+            <a href="Enunciado01.txt" target="_blank" class="boton">Ejecutar Enunciado N° 01</a>
+        </div>
+    </div>
+
+    <!-- Código 2 - Ejercicio avanzado de Dart -->
+    <div class="codigo">
+        <h3>Código 2 - Ejercicio avanzado de Dart</h3>
+        <pre>
+            
+import 'dart:io';
+
+void main() {
+  // Precios base para mayores y jóvenes
+  double precioMayor = 350;
+  double precioJoven = 200;
+
+  // Descuentos por nivel para mayores de 18 años
+  Map<int, double> descuentoMayor = {
+    1: 0.40,
+    2: 0.30,
+    3: 0.15,
+    4: 0.0, // Sin descuento para otros niveles
+  };
+
+  // Descuentos por nivel para jóvenes de 18 años
+  Map<int, double> descuentoJoven = {
+    1: 0.60,
+    2: 0.40,
+    3: 0.20,
+    4: 0.0, // Sin descuento para otros niveles
+  };
+
+  // Solicitar la edad del hombre
+  print('Ingresa la edad del hombre:');
+  int? edad = int.tryParse(stdin.readLineSync()!);
+
+  if (edad == null || edad < 0) {
+    print('Edad inválida.');
+    return;
+  }
+
+  // Solicitar el nivel de sistema de beneficio
+  print('Ingresa el nivel de sistema de beneficio (1, 2, 3, 4):');
+  int? nivel = int.tryParse(stdin.readLineSync()!);
+
+  if (nivel == null || !descuentoMayor.containsKey(nivel)) {
+    print('Nivel inválido.');
+    return;
+  }
+
+  double precioFinal = 0;
+  double descuentoAplicado = 0;
+
+  // Calcular según la edad
+  if (edad > 18) {
+    // Hombres mayores de 18 años
+    descuentoAplicado = descuentoMayor[nivel]!;
+    precioFinal = precioMayor * (1 - descuentoAplicado);
+  } else if (edad == 18) {
+    // Hombres de 18 años
+    descuentoAplicado = descuentoJoven[nivel]!;
+    precioFinal = precioJoven * (1 - descuentoAplicado);
+  } else {
+    print('No se aplica la venta de libreta para menores de 18 años.');
+    return;
+  }
+
+  // Mostrar resultados
+  print('El descuento aplicado es: ${descuentoAplicado * 100}%');
+  print('El valor final a pagar es: S/ $precioFinal');
+}
+        </pre>
+        <div class="botones">
+            <a href="Enunciado02.txt" target="_blank" class="boton">Ver Enunciado N° 02</a>
+            <a href="javascript:void(0)" onclick="forzarDescarga('Enunciado02.txt', 'Enunciado02.txt')" class="boton">Descargar Enunciado N° 02</a>
+            <a href="Enunciado02.txt" target="_blank" class="boton">Ejecutar Enunciado N° 02</a>
+        </div>
+    </div>
+
+    <!-- Código 3 - Ejercicio práctico de Dart -->
+    <div class="codigo">
+        <h3>Código 3 - Ejercicio práctico de Dart</h3>
+        <pre>
+
+            import 'dart:io';
+
+            void main() {
+              // Sueldo básico
+              const double sueldoBasico = 600.0;
+            
+              // Solicitar el importe total vendido y número de hijos
+              print('Ingresa el importe total vendido:');
+              double? importeVendido = double.tryParse(stdin.readLineSync()!);
+            
+              if (importeVendido == null || importeVendido < 0) {
+                print('Importe inválido.');
+                return;
+              }
+            
+              print('Ingresa el número de hijos:');
+              int? numHijos = int.tryParse(stdin.readLineSync()!);
+            
+              if (numHijos == null || numHijos < 0) {
+                print('Número de hijos inválido.');
+                return;
+              }
+            
+    // Cálculo de la comisión
+    double comision = (importeVendido > 15000) ? (importeVendido * 0.07) : (importeVendido * 0.05);
+            
+              // Cálculo de la bonificación
+              double bonificacionPorHijo = (numHijos < 5) ? 25.0 : 22.0;
+              double bonificacionTotal = bonificacionPorHijo * numHijos;
+            
+              // Cálculo del sueldo bruto
+              double sueldoBruto = sueldoBasico + comision + bonificacionTotal;
+            
+              // Cálculo del descuento
+              double descuento = (sueldoBruto > 3500) ? (sueldoBruto * 0.15) : (sueldoBruto * 0.11);
+            
+              // Cálculo del sueldo neto
+              double sueldoNeto = sueldoBruto - descuento;
+            
+              // Mostrar resultados
+              print('Sueldo Básico: S/ $sueldoBasico');
+              print('Comisión: S/ $comision');
+              print('Bonificación: S/ $bonificacionTotal');
+              print('Sueldo Bruto: S/ $sueldoBruto');
+              print('Descuento: S/ $descuento');
+              print('Sueldo Neto: S/ $sueldoNeto');
+            }
+            
+        </pre>
+        <div class="botones">
+            <a href="Enunciado03.txt" target="_blank" class="boton">Ver Enunciado N° 03</a>
+            <a href="javascript:void(0)" onclick="forzarDescarga('Enunciado03.txt', 'Enunciado03.txt')" class="boton">Descargar Enunciado N° 03</a>
+            <a href="Enunciado03.txt" target="_blank" class="boton">Ejecutar Enunciado N° 03</a>
+        </div>
+    </div>
+
+<div class="semana">
+    <h2>Semana 05</h2>
+    <p>Implementamos aplicaciones básicas utilizando Dart para la actividad de esta semana. A continuación, puedes ver y descargar los tres códigos generados.</p>
+    <img src="3.PNG" alt="Ejercicios en Visual Studio de Dart en la semana 04" />
+    
+    <!-- Código 1 - Ejercicio básico de Dart -->
+
+    <div class="codigo">
+        <h3>Código N° 01 - EJERCICIO SUMATORIA DE NÙMEROS PRIMOS EN UN RANGO EN EL LENGUAJE DE DART</h3>
+        <pre>
+
+            import 'dart:io';
+
+            bool esPrimo(int numero) {
+             if (numero < 2) {
+              return false;
+             }
+             for (int i = 2; i <= numero ~/ 2; i++) {
+              if (numero % i == 0) {
+               return false;
+              }
+             }
+             return true;
+            }
+            
+            int sumarPrimosEnRango(int inicio, int fin) {
+             int suma = 0;
+             for (int i = inicio; i <= fin; i++) {
+              if (esPrimo(i)) {
+               suma += i;
+              }
+             }
+             return suma;
+            }
+            
+            void main() {
+             stdout.write('Ingresa el número inicial: ');
+             int inicio = int.parse(stdin.readLineSync()!);
+            
+             stdout.write('Ingresa el número final: ');
+             int fin = int.parse(stdin.readLineSync()!);
+            
+             int sumaPrimos = sumarPrimosEnRango(inicio, fin);
+             print('La suma de los números primos entre $inicio y $fin es: $sumaPrimos');
+            }
+        </pre>
+        <div class="botones">
+            <a href="Ejercicio01.txt" target="_blank" class="boton">Ver Ejercicio N° 01</a>
+            <a href="javascript:void(0)" onclick="forzarDescarga('Ejercicio01.txt', 'Ejercicio01.txt')" class="boton">Descargar Ejercicio N° 01</a>
+            <a href="Ejercicio01.txt" target="_blank" class="boton">Ejecutar Ejercicio N° 01</a>
+        </div>
+    </div>
+
+    <!-- Código 2 - Ejercicio avanzado de Dart -->
+    <div class="codigo">
+        <h3>Código N° 02 - EJERCICIO DE NÚMEROS DE FIBONACCI HASTA N TÉRMINOS EN EL LENGUAJE DE DART</h3>
+        <pre>
+
+            import 'dart:io';
+
+            void generarFibonacci(int n) {
+              int a = 0, b = 1, siguiente;
+            
+              print('Secuencia de Fibonacci hasta $n términos:');
+              for (int i = 1; i <= n; i++) {
+                stdout.write('$a ');
+                siguiente = a + b;
+                a = b;
+                b = siguiente;
+              }
+              print('');
+            }
+            
+            void main() {
+              stdout.write('Ingresa el número de términos: ');
+              int n = int.parse(stdin.readLineSync()!);
+            
+              generarFibonacci(n);
+            }            
+        </pre>
+        <div class="botones">
+            <a href="Ejercicio02.txt" target="_blank" class="boton">Ver Ejercicio N° 02</a>
+            <a href="javascript:void(0)" onclick="forzarDescarga('Ejercicio02.txt', 'Ejercicio02.txt')" class="boton">Descargar Ejercicio N° 02</a>
+            <a href="Ejercicio02.txt" target="_blank" class="boton">Ejecutar Ejercicio N° 02</a>
+        </div>
+    </div>
+
+    <!-- Código 3 - Ejercicio práctico de Dart -->
+    <div class="codigo">
+        <h3>Código N° 03 - EJERCICIO FACTORIAL DE NÚMEROS GRANDES EN EL LENGUAJE DE DART</h3>
+        <pre>
+
+            import 'dart:math';
+            import 'dart:core';
+            import 'dart:typed_data';
+            
+            // Función para calcular el factorial utilizando BigInt para manejar números grandes
+            BigInt calcularFactorial(int n) {
+              BigInt resultado = BigInt.one;
+              
+              for (int i = 1; i <= n; i++) {
+                resultado *= BigInt.from(i);
+              }
+              
+              return resultado;
+            }
+            
+            void main() {
+              int numero = 100;  // Puedes cambiar el número si lo deseas
+              
+              BigInt factorial = calcularFactorial(numero);
+              
+              print("El factorial de $numero es: $factorial");
+            }
+        </pre>
+        <div class="botones">
+            <a href="Ejercicio03.txt" target="_blank" class="boton">Ver Ejercicio N° 03</a>
+            <a href="javascript:void(0)" onclick="forzarDescarga('Ejercicio03.txt', 'Ejercicio03.txt')" class="boton">Descargar Ejercicio N° 03</a>
+            <a href="Ejercicio03.txt" target="_blank" class="boton">Ejecutar Ejercicio N° 03</a>
+        </div>
+    </div>
+</div>
+
+    <!-- Código 4 - Ejercicio práctico de Dart -->
+    <div class="codigo">
+        <h3>Código N° 04 - EJERCICIO SOBRE LA INVERSIÓN DE UN NÚMERO EN EL LENGUAJE DE DART</h3>
+        <pre>
+
+            import 'dart:io';
+
+void main() {
+  // Solicitar al usuario que ingrese un número entero
+  stdout.write("Ingrese un número entero: ");
+  int numero = int.parse(stdin.readLineSync()!);
+
+  // Inicializar la variable para almacenar el número invertido
+  int invertido = 0;
+
+  // Usar el bucle while para invertir el número
+  while (numero != 0) {
+    int digito = numero % 10;  // Extraer el último dígito
+    invertido = invertido * 10 + digito;  // Agregar el dígito al número invertido
+    numero = numero ~/ 10;  // Eliminar el último dígito del número original
+  }
+
+  // Mostrar el resultado
+  print("El número invertido es: $invertido");
+}        
+        </pre>
+        <div class="botones">
+            <a href="Ejercicio04.txt" target="_blank" class="boton">Ver Ejercicio N° 04</a>
+            <a href="javascript:void(0)" onclick="forzarDescarga('Ejercicio04.txt', 'Ejercicio04.txt')" class="boton">Descargar Ejercicio N° 04</a>
+            <a href="Ejercicio04.txt" target="_blank" class="boton">Ejecutar Ejercicio N° 04</a>
+        </div>
+    </div>
+</div>
+
+    <!-- Código 5 - Ejercicio práctico de Dart -->
+    <div class="codigo">
+        <h3>Código N° 05 - EJERCICIO SOBRE LA SUMA DE MATRICES NXN EN EL LENGUAJE DE DART</h3>
+        <pre>
+
+            import 'dart:io';
+
+            void main() {
+              // Solicitar el tamaño de las matrices N x N
+              stdout.write("Ingrese el tamaño de las matrices (N): ");
+              int n = int.parse(stdin.readLineSync()!);
+            
+              // Crear dos matrices vacías de tamaño N x N
+              List<List<int>> matriz1 = List.generate(n, (_) => List.filled(n, 0));
+              List<List<int>> matriz2 = List.generate(n, (_) => List.filled(n, 0));
+              List<List<int>> sumaMatriz = List.generate(n, (_) => List.filled(n, 0));
+            
+              // Solicitar valores para la primera matriz
+              print("Ingrese los valores de la primera matriz:");
+              for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                  stdout.write("Elemento [$i][$j]: ");
+                  matriz1[i][j] = int.parse(stdin.readLineSync()!);
+                }
+              }
+            
+              // Solicitar valores para la segunda matriz
+              print("Ingrese los valores de la segunda matriz:");
+              for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                  stdout.write("Elemento [$i][$j]: ");
+                  matriz2[i][j] = int.parse(stdin.readLineSync()!);
+                }
+              }
+            
+              // Sumar las dos matrices
+              for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                  sumaMatriz[i][j] = matriz1[i][j] + matriz2[i][j];
+                }
+              }
+            
+              // Mostrar el resultado de la suma de las matrices
+              print("La suma de las matrices es:");
+              for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                  stdout.write("${sumaMatriz[i][j]} ");
+                }
+                print("");  // Nueva línea después de cada fila
+              }
+            }
+        </pre>
+        <div class="botones">
+            <a href="Ejercicio05.txt" target="_blank" class="boton">Ver Ejercicio N° 05</a>
+            <a href="javascript:void(0)" onclick="forzarDescarga('Ejercicio05.txt', 'Ejercicio05.txt')" class="boton">Descargar Ejercicio N° 05</a>
+            <a href="Ejercicio05.txt" target="_blank" class="boton">Ejecutar Ejercicio N° 05</a>
+        </div>
+    </div>
+</div>
+
+    <!-- Código 6 - Ejercicio práctico de Dart -->
+    <div class="codigo">
+        <h3>Código N° 06 - EJERCICIO SOBRE NÚMERO PERFECTO EN EL LENGUAJE DE DART</h3>
+        <pre>
+
+            void main() {
+                print("Números perfectos entre 1 y 10000:");
+              
+                // Bucle para iterar sobre los números desde 1 hasta 10000
+                for (int num = 1; num <= 10000; num++) {
+                  int sumaDivisores = 0;
+              
+                  // Encontrar los divisores propios del número actual
+                  for (int i = 1; i < num; i++) {
+                    if (num % i == 0) {
+                      sumaDivisores += i;
+                    }
+                  }
+              
+                  // Verificar si el número es perfecto
+                  if (sumaDivisores == num) {
+                    print(num); // Imprimir el número perfecto
+                  }
+                }
+              }
+        </pre>
+        <div class="botones">
+            <a href="Ejercicio06.txt" target="_blank" class="boton">Ver Ejercicio N° 06</a>
+            <a href="javascript:void(0)" onclick="forzarDescarga('Ejercicio06.txt', 'Ejercicio06.txt')" class="boton">Descargar Ejercicio N° 06</a>
+            <a href="Ejercicio06.txt" target="_blank" class="boton">Ejecutar Ejercicio N° 06</a>
+        </div>
+    </div>
+</div>
+
+<!-- Código 7 - Ejercicio práctico de Dart -->
+<div class="codigo">
+    <h3>Código N° 07 - EJERCICIO SOBRE MATRÍZ DE ESPIRAL EN EL LENGUAJE DE DART</h3>
+    <pre>
+
+        void main() {
+            int n = 5; // Cambia este valor para probar con diferentes tamaños de matriz
+          
+            List<List<int>> matriz = List.generate(n, (_) => List.filled(n, 0));
+          
+            int valor = 1;
+            int filaInicio = 0, filaFin = n - 1;
+            int colInicio = 0, colFin = n - 1;
+          
+            // Bucle para llenar la matriz en espiral
+            while (filaInicio <= filaFin && colInicio <= colFin) {
+              // Llenar la fila superior (de izquierda a derecha)
+              for (int i = colInicio; i <= colFin; i++) {
+                matriz[filaInicio][i] = valor++;
+              }
+              filaInicio++;
+          
+              // Llenar la columna derecha (de arriba hacia abajo)
+              for (int i = filaInicio; i <= filaFin; i++) {
+                matriz[i][colFin] = valor++;
+              }
+              colFin--;
+          
+              // Llenar la fila inferior (de derecha a izquierda)
+              if (filaInicio <= filaFin) {
+                for (int i = colFin; i >= colInicio; i--) {
+                  matriz[filaFin][i] = valor++;
+                }
+                filaFin--;
+              }
+          
+              // Llenar la columna izquierda (de abajo hacia arriba)
+              if (colInicio <= colFin) {
+                for (int i = filaFin; i >= filaInicio; i--) {
+                  matriz[i][colInicio] = valor++;
+                }
+                colInicio++;
+              }
+            }
+          
+            // Imprimir la matriz en espiral
+            print("Matriz en espiral de tamaño $n:");
+            for (var fila in matriz) {
+              print(fila);
+            }
+          }
+    </pre>
+    <div class="botones">
+        <a href="Ejercicio07.txt" target="_blank" class="boton">Ver Ejercicio N° 07</a>
+        <a href="javascript:void(0)" onclick="forzarDescarga('Ejercicio07.txt', 'Ejercicio07.txt')" class="boton">Descargar Ejercicio N° 07</a>
+        <a href="Ejercicio07.txt" target="_blank" class="boton">Ejecutar Ejercicio N° 07</a>
+    </div>
+</div>
+</div>
+
+<!-- Código 8 - Ejercicio práctico de Dart -->
+<div class="codigo">
+    <h3>Código N° 08 - EJERCICIO SOBRE VERIFICACIÓN DE UN NÚMERO ARMSTRONG EN EL LENGUAJE DE DART</h3>
+    <pre>
+
+        import 'dart:math'; // Para usar pow()
+        import 'dart:io';   // Para recibir entrada del usuario
+        
+        void main() {
+          // Solicitar al usuario que ingrese un número
+          print("Ingresa un número para verificar si es un número Armstrong:");
+          int numero = int.parse(stdin.readLineSync()!);
+        
+          // Convertir el número en una lista de dígitos
+          String numeroStr = numero.toString();
+          int n = numeroStr.length; // Número de dígitos
+        
+          // Inicializar la suma
+          int suma = 0;
+        
+          // Bucle para separar y elevar cada dígito
+          for (int i = 0; i < n; i++) {
+            int digito = int.parse(numeroStr[i]);
+            suma += pow(digito, n).toInt(); // Elevar a la potencia n
+          }
+        
+          // Verificar si el número es Armstrong
+          if (suma == numero) {
+            print("$numero es un número Armstrong.");
+          } else {
+            print("$numero no es un número Armstrong.");
+          }
+        }        
+    </pre>
+    <div class="botones">
+        <a href="Ejercicio08.txt" target="_blank" class="boton">Ver Ejercicio N° 08</a>
+        <a href="javascript:void(0)" onclick="forzarDescarga('Ejercicio08.txt', 'Ejercicio08.txt')" class="boton">Descargar Ejercicio N° 08</a>
+        <a href="Ejercicio08.txt" target="_blank" class="boton">Ejecutar Ejercicio N° 08</a>
+    </div>
+</div>
+</div>
+
+<!-- Código 9 - Ejercicio práctico de Dart -->
+<div class="codigo">
+    <h3>Código N° 09 - EJERCICIO SOBRE ÉL CÁLCULO DE POTENCIAS USANDO MULTIPLICACIÓN REPETIDA EN EL LENGUAJE DE DART</h3>
+    
+    <pre>
+
+        import 'dart:io'; // Para recibir entrada del usuario
+
+        void main() {
+          // Solicitar la base y el exponente al usuario
+          print("Ingresa la base:");
+          int base = int.parse(stdin.readLineSync()!);
+          
+          print("Ingresa el exponente:");
+          int exponente = int.parse(stdin.readLineSync()!);
+          
+          // Inicializar el resultado en 1 (cualquier número elevado a 0 es 1)
+          int resultado = 1;
+          
+          // Usar un bucle for para realizar la multiplicación repetida
+          for (int i = 0; i < exponente; i++) {
+            resultado *= base;
+          }
+          
+          // Mostrar el resultado
+          print("El resultado de $base^$exponente es: $resultado");
+        }         
+    </pre>
+
+    <div class="botones">
+
+        <a href="Ejercicio09.txt" target="_blank" class="boton">Ver Ejercicio N° 09</a>
+
+        <a href="javascript:void(0)" onclick="forzarDescarga('Ejercicio09.txt', 'Ejercicio09.txt')" class="boton">Descargar Ejercicio N° 09</a>
+
+        <a href="Ejercicio09.txt" target="_blank" class="boton">Ejecutar Ejercicio N° 09</a>
+
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>       
+            
+        </div>
+
+    </section>
+
+    <!-- Sección Docente -->
+    <section id="docente">
+        <h2>Conoce a Nuestro Docente</h2>
+        <div class="perfil-docente">
+            <img src="12.png" alt="Foto del docente Raúl Huamaní" />
+            <p>El docente Mg. Ing. Raúl Fernández Bejarano, con amplia experiencia en el desarrollo móvil y web, es un pilar fundamental en el aprendizaje de las nuevas tecnologías, es un experto en programación y desarrollo de aplicaciones móviles. Con años de experiencia en la industria, se dedica a formar a nuevas generaciones de programadores.</p>
+        </div>
+    </section>
+
+        <!-- Sección Diapositivas del Docente -->
+        <section id="diapositivas">
+            <h2>Diapositivas del Docente</h2>
+            <p>A continuación, encontrarás las diapositivas presentadas por nuestro docente en clase.</p>
+    
+            <div class="botones-diapositivas">
+                <a href="Actividad01_AWM.pdf" target="_blank" class="boton">Diapositiva Semana 01</a>
+                <a href="Actividad02_AWM.pdf" target="_blank" class="boton">Diapositiva Semana 02</a>
+                <a href="Actividad03_AWM.pdf" target="_blank" class="boton">Diapositiva Semana 03</a>
+            </div>
+        </section>
+    
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <button type="submit" class="boton">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content" style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div class="footer-section about" style="flex: 1;">
+            <h4 style="color: white; text-align: center;">Sobre Mí</h4>
+            <p style="color: white; text-align: center;">Soy un desarrollador web apasionado por la tecnología y la innovación. Siempre en busca de nuevos retos y oportunidades para aprender y crecer.</p>
+        </div>
+        <div class="footer-section links" style="flex: 1; text-align: center;">
+            <h4 style="color: white;">Me Pueden Encontrar En Las Redes Sociales Como Lo Es En El De</h4>
+            <ul style="list-style-type: none; padding: 0; display: flex; justify-content: center; align-items: flex-end;">
+                <li style="margin: 0 20px; text-align: center;">
+                    <a href="https://www.facebook.com/DOMINICLIONELMESSI10" target="_blank" style="text-decoration: none; color: white;">
+                        <img src="fb.jpg" alt="Facebook" style="width: 30px; height: 30px;" />
+                        <div>Facebook</div>
+                    </a>
+                </li>
+                <li style="margin: 0 20px; text-align: center;">
+                    <a href="https://www.instagram.com" target="_blank" style="text-decoration: none; color: white;">
+                        <img src="ins.png" alt="Instagram" style="width: 30px; height: 30px;" />
+                        <div>Instagram</div>
+                    </a>
+                </li>
+                <li style="margin: 0 20px; text-align: center;">
+                    <a href="https://x.com/?lang=es" target="_blank" style="text-decoration: none; color: white;">
+                        <img src="tw.png" alt="Twitter" style="width: 30px; height: 30px;" />
+                        <div>Twitter</div>
+                    </a>
+                </li>
+                <li style="margin: 0 20px; text-align: center;">
+                    <a href="https://web.whatsapp.com" target="_blank" style="text-decoration: none; color: white;">
+                        <img src="wh.png" alt="WhatsApp" style="width: 30px; height: 30px;" />
+                        <div>WhatsApp</div>
+                    </a>
+                </li>
+                <li style="margin: 0 20px; text-align: center;">
+                    <a href="https://www.tiktok.com/es/" target="_blank" style="text-decoration: none; color: white;">
+                        <img src="tik.png" alt="TikTok" style="width: 30px; height: 30px;" />
+                        <div>TikTok</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-section contact" style="flex: 1; text-align: right;">
+            <h4 style="color: white; text-align: center;">Contacto</h4>
+            <p style="color: white; text-align: center;">
+                <img src="gm.png" alt="Email" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 5px;" />
+                Email: 76266370@institutocajas.info
+            </p>
+            <p style="color: white; text-align: center;">Teléfono: ( + 51 ) 966 - 543 - 091</p>
+        </div>
+    </div>
+    <div class="footer-bottom" style="text-align: center; padding-top: 10px;">
+        <p style="color: white;">&copy; 2024 Lázaro Villena Dóminick Andreé. Todos los derechos reservados.</p>
+    </div>
+</footer>

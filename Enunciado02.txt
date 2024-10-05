@@ -1,0 +1,63 @@
+
+import 'dart:io';
+
+void main() {
+  // Precios base para mayores y jóvenes
+  double precioMayor = 350;
+  double precioJoven = 200;
+
+  // Descuentos por nivel para mayores de 18 años
+  Map<int, double> descuentoMayor = {
+    1: 0.40,
+    2: 0.30,
+    3: 0.15,
+    4: 0.0, // Sin descuento para otros niveles
+  };
+
+  // Descuentos por nivel para jóvenes de 18 años
+  Map<int, double> descuentoJoven = {
+    1: 0.60,
+    2: 0.40,
+    3: 0.20,
+    4: 0.0, // Sin descuento para otros niveles
+  };
+
+  // Solicitar la edad del hombre
+  print('Ingresa la edad del hombre:');
+  int? edad = int.tryParse(stdin.readLineSync()!);
+
+  if (edad == null || edad < 0) {
+    print('Edad inválida.');
+    return;
+  }
+
+  // Solicitar el nivel de sistema de beneficio
+  print('Ingresa el nivel de sistema de beneficio (1, 2, 3, 4):');
+  int? nivel = int.tryParse(stdin.readLineSync()!);
+
+  if (nivel == null || !descuentoMayor.containsKey(nivel)) {
+    print('Nivel inválido.');
+    return;
+  }
+
+  double precioFinal = 0;
+  double descuentoAplicado = 0;
+
+  // Calcular según la edad
+  if (edad > 18) {
+    // Hombres mayores de 18 años
+    descuentoAplicado = descuentoMayor[nivel]!;
+    precioFinal = precioMayor * (1 - descuentoAplicado);
+  } else if (edad == 18) {
+    // Hombres de 18 años
+    descuentoAplicado = descuentoJoven[nivel]!;
+    precioFinal = precioJoven * (1 - descuentoAplicado);
+  } else {
+    print('No se aplica la venta de libreta para menores de 18 años.');
+    return;
+  }
+
+  // Mostrar resultados
+  print('El descuento aplicado es: ${descuentoAplicado * 100}%');
+  print('El valor final a pagar es: S/ $precioFinal');
+}

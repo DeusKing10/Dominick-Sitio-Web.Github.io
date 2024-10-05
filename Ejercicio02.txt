@@ -1,0 +1,22 @@
+
+import 'dart:io';
+
+void generarFibonacci(int n) {
+  int a = 0, b = 1, siguiente;
+
+  print('Secuencia de Fibonacci hasta $n términos:');
+  for (int i = 1; i <= n; i++) {
+    stdout.write('$a ');
+    siguiente = a + b;
+    a = b;
+    b = siguiente;
+  }
+  print('');
+}
+
+void main() {
+  stdout.write('Ingresa el número de términos: ');
+  int n = int.parse(stdin.readLineSync()!);
+
+  generarFibonacci(n);
+}

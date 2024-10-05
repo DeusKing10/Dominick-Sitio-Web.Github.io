@@ -1,0 +1,23 @@
+
+import 'dart:math';
+import 'dart:core';
+import 'dart:typed_data';
+
+// Función para calcular el factorial utilizando BigInt para manejar números grandes
+BigInt calcularFactorial(int n) {
+  BigInt resultado = BigInt.one;
+  
+  for (int i = 1; i <= n; i++) {
+    resultado *= BigInt.from(i);
+  }
+  
+  return resultado;
+}
+
+void main() {
+  int numero = 100;  // Puedes cambiar el número si lo deseas
+  
+  BigInt factorial = calcularFactorial(numero);
+  
+  print("El factorial de $numero es: $factorial");
+}

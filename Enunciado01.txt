@@ -1,0 +1,62 @@
+
+import 'dart:io';
+
+void main() {
+ // Tabla de pensiones por categoría
+ Map<String, double> pensiones = {
+  'A': 550,
+  'B': 500,
+  'C': 460,
+  'D': 400,
+ };
+
+ // Tabla de descuentos por nota promedio
+ List<Map<String, dynamic>> descuentos = [
+  {'rango': [0.0, 13.99], 'descuento': 0},
+  {'rango': [14.0, 15.99], 'descuento': 0.10},
+  {'rango': [16.0, 17.99], 'descuento': 0.12},
+  {'rango': [18.0, 20.0], 'descuento': 0.15},
+ ];
+
+ // Solicitar categoría del estudiante
+ print('Ingresa la categoría del estudiante (A, B, C, D):');
+ String? categoria = stdin.readLineSync()?.toUpperCase();
+
+ // Verificar si la categoría es válida
+ if (!pensiones.containsKey(categoria)) {
+  print('Categoría inválida.');
+  return;
+ }
+
+ // Solicitar nota promedio del estudiante
+ print('Ingresa la nota promedio del estudiante:');
+ double? promedio = double.tryParse(stdin.readLineSync()!);
+
+ // Verificar si la nota promedio es válida
+ if (promedio == null || promedio < 0 || promedio > 20) {
+  print('Nota promedio inválida.');
+  return;
+ }
+
+ // Obtener la pensión correspondiente a la categoría
+ double pensionActual = pensiones[categoria]!;
+
+ // Determinar el porcentaje de descuento según la nota promedio
+ double descuentoAplicado = 0;
+ for (var descuento in descuentos) {
+  if (promedio >= descuento['rango'][0] && promedio <= descuento['rango'][1]) {
+   descuentoAplicado = descuento['descuento'];
+   break;
+  }
+ }
+
+ // Calcular el monto de descuento y la nueva pensión
+ double montoDescuento = pensionActual * descuentoAplicado;
+ double nuevaPension = pensionActual - montoDescuento;
+
+ // Mostrar resultados
+ print('La pensión actual es: S/ $pensionActual');
+ print('El descuento aplicado es: ${descuentoAplicado * 100}%');
+ print('El monto del descuento es: S/ $montoDescuento');
+ print('La nueva pensión es: S/ $nuevaPension');
+}

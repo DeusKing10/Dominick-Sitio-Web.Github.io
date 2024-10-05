@@ -1,0 +1,29 @@
+
+import 'dart:math'; // Para usar pow()
+import 'dart:io';   // Para recibir entrada del usuario
+
+void main() {
+  // Solicitar al usuario que ingrese un número
+  print("Ingresa un número para verificar si es un número Armstrong:");
+  int numero = int.parse(stdin.readLineSync()!);
+
+  // Convertir el número en una lista de dígitos
+  String numeroStr = numero.toString();
+  int n = numeroStr.length; // Número de dígitos
+
+  // Inicializar la suma
+  int suma = 0;
+
+  // Bucle para separar y elevar cada dígito
+  for (int i = 0; i < n; i++) {
+    int digito = int.parse(numeroStr[i]);
+    suma += pow(digito, n).toInt(); // Elevar a la potencia n
+  }
+
+  // Verificar si el número es Armstrong
+  if (suma == numero) {
+    print("$numero es un número Armstrong.");
+  } else {
+    print("$numero no es un número Armstrong.");
+  }
+}

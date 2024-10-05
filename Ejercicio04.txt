@@ -1,0 +1,21 @@
+
+import 'dart:io';
+
+void main() {
+  // Solicitar al usuario que ingrese un número entero
+  stdout.write("Ingrese un número entero: ");
+  int numero = int.parse(stdin.readLineSync()!);
+
+  // Inicializar la variable para almacenar el número invertido
+  int invertido = 0;
+
+  // Usar el bucle while para invertir el número
+  while (numero != 0) {
+    int digito = numero % 10;  // Extraer el último dígito
+    invertido = invertido * 10 + digito;  // Agregar el dígito al número invertido
+    numero = numero ~/ 10;  // Eliminar el último dígito del número original
+  }
+
+  // Mostrar el resultado
+  print("El número invertido es: $invertido");
+}

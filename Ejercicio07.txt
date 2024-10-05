@@ -1,0 +1,47 @@
+
+void main() {
+  int n = 5; // Cambia este valor para probar con diferentes tamaños de matriz
+
+  List<List<int>> matriz = List.generate(n, (_) => List.filled(n, 0));
+
+  int valor = 1;
+  int filaInicio = 0, filaFin = n - 1;
+  int colInicio = 0, colFin = n - 1;
+
+  // Bucle para llenar la matriz en espiral
+  while (filaInicio <= filaFin && colInicio <= colFin) {
+    // Llenar la fila superior (de izquierda a derecha)
+    for (int i = colInicio; i <= colFin; i++) {
+      matriz[filaInicio][i] = valor++;
+    }
+    filaInicio++;
+
+    // Llenar la columna derecha (de arriba hacia abajo)
+    for (int i = filaInicio; i <= filaFin; i++) {
+      matriz[i][colFin] = valor++;
+    }
+    colFin--;
+
+    // Llenar la fila inferior (de derecha a izquierda)
+    if (filaInicio <= filaFin) {
+      for (int i = colFin; i >= colInicio; i--) {
+        matriz[filaFin][i] = valor++;
+      }
+      filaFin--;
+    }
+
+    // Llenar la columna izquierda (de abajo hacia arriba)
+    if (colInicio <= colFin) {
+      for (int i = filaFin; i >= filaInicio; i--) {
+        matriz[i][colInicio] = valor++;
+      }
+      colInicio++;
+    }
+  }
+
+  // Imprimir la matriz en espiral
+  print("Matriz en espiral de tamaño $n:");
+  for (var fila in matriz) {
+    print(fila);
+  }
+}

@@ -1,0 +1,48 @@
+
+import 'dart:io';
+
+void main() {
+  // Sueldo básico
+  const double sueldoBasico = 600.0;
+
+  // Solicitar el importe total vendido y número de hijos
+  print('Ingresa el importe total vendido:');
+  double? importeVendido = double.tryParse(stdin.readLineSync()!);
+
+  if (importeVendido == null || importeVendido < 0) {
+    print('Importe inválido.');
+    return;
+  }
+
+  print('Ingresa el número de hijos:');
+  int? numHijos = int.tryParse(stdin.readLineSync()!);
+
+  if (numHijos == null || numHijos < 0) {
+    print('Número de hijos inválido.');
+    return;
+  }
+
+  // Cálculo de la comisión
+  double comision = (importeVendido > 15000) ? (importeVendido * 0.07) : (importeVendido * 0.05);
+
+  // Cálculo de la bonificación
+  double bonificacionPorHijo = (numHijos < 5) ? 25.0 : 22.0;
+  double bonificacionTotal = bonificacionPorHijo * numHijos;
+
+  // Cálculo del sueldo bruto
+  double sueldoBruto = sueldoBasico + comision + bonificacionTotal;
+
+  // Cálculo del descuento
+  double descuento = (sueldoBruto > 3500) ? (sueldoBruto * 0.15) : (sueldoBruto * 0.11);
+
+  // Cálculo del sueldo neto
+  double sueldoNeto = sueldoBruto - descuento;
+
+  // Mostrar resultados
+  print('Sueldo Básico: S/ $sueldoBasico');
+  print('Comisión: S/ $comision');
+  print('Bonificación: S/ $bonificacionTotal');
+  print('Sueldo Bruto: S/ $sueldoBruto');
+  print('Descuento: S/ $descuento');
+  print('Sueldo Neto: S/ $sueldoNeto');
+}
